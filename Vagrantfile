@@ -14,8 +14,8 @@ slurm_cluster = {
 
 #Provisioning inline script
 $script = <<SCRIPT
-apt-get update
-apt-get install -y -q vim slurm-llnl
+yum update
+yum install -y -q vim nano slurm
 echo "10.10.10.3    controller" >> /etc/hosts
 echo "10.10.10.4    server" >> /etc/hosts
 ln -s /vagrant/slurm.conf /etc/slurm-llnl/slurm.conf
