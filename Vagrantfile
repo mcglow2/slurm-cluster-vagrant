@@ -25,7 +25,7 @@ Vagrant.configure("2") do |global_config|
     slurm_cluster.each_pair do |name, options|
         global_config.vm.define name do |config|
             #VM configurations
-            config.vm.box = "ubuntu/xenial64"
+            config.vm.box = "rockylinux/9"
             config.vm.hostname = "#{name}"
             config.vm.network :private_network, ip: options[:ipaddress]
 
