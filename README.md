@@ -38,6 +38,6 @@ Tested with:
 - SLURM 15.08.7 (Ubuntu 16.04)
 
 ---
-Fork from http://mussolblog.wordpress.com/
 
+https://manski.net/articles/vagrant/multi-machine-tutorial
 http://mussolblog.wordpress.com/2013/07/17/setting-up-a-testing-slurm-cluster/
