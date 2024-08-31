@@ -1,7 +1,7 @@
 SLURM Vagrant Cluster
 =====================
 
-A demo SLURM cluster running in Vagrant virtual machines.
+A demo SLURM cluster running in Vagrant virtual machines.  Slurm is downloaded and built from source automatically.  
 
 # Usage
 
@@ -32,10 +32,9 @@ vagrant up --provision-with test
 # Software
 
 Tested with:
-
-- Vagrant 2.0.1
-
-- SLURM 15.08.7 (Ubuntu 16.04)
+- Rocky Linux 9
+- Vagrant 2.4.1
+- Slurm 22.05.11
 
 ---
 
