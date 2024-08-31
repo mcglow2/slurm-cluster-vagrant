@@ -5,3 +5,5 @@ slurm/*
 tmp/id_rsa.controller.pub
 /tmp/rpms
 tmp/id_rsa.controller.pub
+/tmp/slurm_shared/log
+/tmp/slurm_shared/run
