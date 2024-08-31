@@ -2,3 +2,6 @@
 munge.key
 slurm/*
 .DS_Store
+tmp/id_rsa.controller.pub
+/tmp/rpms
+tmp/id_rsa.controller.pub
