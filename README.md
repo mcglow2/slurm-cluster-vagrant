@@ -8,39 +8,25 @@ A demo SLURM cluster running in Vagrant virtual machines.
 Build VM's
 
 ```
-make setup
+vagrant up
 ```
 
-Start SLURM daemons inside VM's
+Install and Start SLURM daemons inside VM's
 
 ```
-make start
+vagrant up --provision-with slurm
 ```
+
+Configure slurm with a set of test users, partitions, QOS's and Accounts
+```
+vagrant up --provision-with sample-data
+```
+
+
 Test that it is working
 
 ```
-make test
-```
-
-## Extras
-
-Stop VM's that are running
-
-```
-make stop
-```
-(must be restarted with `vagrant up`, or by running `make setup` again)
-
-Delete VM's
-
-```
-make remove
-```
-
-Clean out SLURM logs
-
-```
-make clean
+vagrant up --provision-with test
 ```
 
 # Software
