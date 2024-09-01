@@ -1,4 +1,8 @@
 .vagrant/*
-munge.key
-slurm/*
 .DS_Store
+tmp/munge.key
+tmp/id_rsa.controller.pub
+tmp/rpms/*
+tmp/slurm_shared/log/*
+tmp/slurm_shared/run/*
+tmp/slurm_shared/tmp/*

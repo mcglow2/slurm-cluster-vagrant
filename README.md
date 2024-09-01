@@ -1,57 +1,42 @@
 SLURM Vagrant Cluster
 =====================
 
-A demo SLURM cluster running in Vagrant virtual machines.
+A demo SLURM cluster running in Vagrant virtual machines.  Slurm is downloaded and built from source automatically.  
 
 # Usage
 
 Build VM's
 
 ```
-make setup
+vagrant up
 ```
 
-Start SLURM daemons inside VM's
+Install and Start SLURM daemons inside VM's
 
 ```
-make start
+vagrant up --provision-with slurm
 ```
+
+Configure slurm with a set of test users, partitions, QOS's and Accounts
+```
+vagrant up --provision-with sample-data
+```
+
+
 Test that it is working
 
 ```
-make test
-```
-
-## Extras
-
-Stop VM's that are running
-
-```
-make stop
-```
-(must be restarted with `vagrant up`, or by running `make setup` again)
-
-Delete VM's
-
-```
-make remove
-```
-
-Clean out SLURM logs
-
-```
-make clean
+vagrant up --provision-with test
 ```
 
 # Software
 
 Tested with:
-
-- Vagrant 2.0.1
-
-- SLURM 15.08.7 (Ubuntu 16.04)
+- Rocky Linux 9
+- Vagrant 2.4.1
+- Slurm 22.05.11
 
 ---
-Fork from http://mussolblog.wordpress.com/
 
+https://manski.net/articles/vagrant/multi-machine-tutorial
 http://mussolblog.wordpress.com/2013/07/17/setting-up-a-testing-slurm-cluster/
