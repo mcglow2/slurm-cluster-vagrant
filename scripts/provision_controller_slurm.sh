@@ -8,8 +8,7 @@ service munge start
 cp /etc/munge/munge.key /vagrant/tmp/munge.key
 
 SLURM_VERSION=22.05.11
-yum install -y rpm-build vim perl-ExtUtils-MakeMaker json-c freeipmi munge http-parser libyaml pam-devel mariadb-connector-c-devel mariadb-devel autoconf automake gcc munge-libs munge-devel readline-devel
-
+yum install -y nano dbus-devel kernel-headers rpm-build vim perl-ExtUtils-MakeMaker json-c freeipmi munge http-parser libyaml pam-devel mariadb-connector-c-devel mariadb-devel autoconf automake gcc munge-libs munge-devel readline-devel
 echo "\n"
 echo "Installing Slurm version $SLURM_VERSION \n"
 
@@ -44,6 +43,7 @@ rpm -i /vagrant/tmp/rpms/slurm-slurmdbd-$SLURM_VERSION-1.el9.x86_64.rpm
 mkdir /etc/slurm
 #cp /vagrant/slurm /etc/slurm
 cp /vagrant/slurm.conf /etc/slurm/slurm.conf
+cp /vagrant/cgroup.conf /etc/slurm/cgroup.conf
 chown -R slurm /etc/slurm
 
 #Start slurm
