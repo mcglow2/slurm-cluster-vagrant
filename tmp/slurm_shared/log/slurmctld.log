@@ -5821,3 +5821,312 @@
 [2024-08-31T12:03:22.908] debug2: Error connecting slurm stream socket at 10.10.10.11:6818: Connection refused
 [2024-08-31T12:03:22.910] debug2: _slurm_connect: failed to connect to 10.10.10.12:6818: Connection refused
 [2024-08-31T12:03:22.911] debug2: Error connecting slurm stream socket at 10.10.10.12:6818: Connection refused
+[2024-09-03T22:29:42.332] debug:  slurmctld log levels: stderr=debug2 logfile=debug2 syslog=quiet
+[2024-09-03T22:29:42.333] debug:  Log file re-opened
+[2024-09-03T22:29:42.338] error: Configured MailProg is invalid
+[2024-09-03T22:29:42.339] debug:  slurmctld: slurmscriptd fork()'d and initialized.
+[2024-09-03T22:29:42.339] slurmctld version 22.05.11 started on cluster testing
+[2024-09-03T22:29:42.339] slurmscriptd: debug:  slurmscriptd: Got ack from slurmctld, initialization successful
+[2024-09-03T22:29:42.341] slurmscriptd: debug:  _slurmscriptd_mainloop: started
+[2024-09-03T22:29:42.341] debug:  _slurmctld_listener_thread: started listening to slurmscriptd
+[2024-09-03T22:29:42.351] cred/munge: init: Munge credential signature plugin loaded
+[2024-09-03T22:29:42.352] debug:  auth/munge: init: Munge authentication plugin loaded
+[2024-09-03T22:29:42.352] select/cons_res: common_init: select/cons_res loaded
+[2024-09-03T22:29:42.353] select/cons_tres: common_init: select/cons_tres loaded
+[2024-09-03T22:29:42.353] select/cray_aries: init: Cray/Aries node selection plugin loaded
+[2024-09-03T22:29:42.353] preempt/none: init: preempt/none loaded
+[2024-09-03T22:29:42.353] debug:  acct_gather_energy/none: init: AcctGatherEnergy NONE plugin loaded
+[2024-09-03T22:29:42.353] debug:  acct_gather_profile/none: init: AcctGatherProfile NONE plugin loaded
+[2024-09-03T22:29:42.354] debug:  acct_gather_interconnect/none: init: AcctGatherInterconnect NONE plugin loaded
+[2024-09-03T22:29:42.354] debug:  acct_gather_filesystem/none: init: AcctGatherFilesystem NONE plugin loaded
+[2024-09-03T22:29:42.354] debug2: No acct_gather.conf file (/etc/slurm/acct_gather.conf)
+[2024-09-03T22:29:42.354] debug:  jobacct_gather/none: init: Job accounting gather NOT_INVOKED plugin loaded
+[2024-09-03T22:29:42.355] ext_sensors/none: init: ExtSensors NONE plugin loaded
+[2024-09-03T22:29:42.355] debug:  MPI: Loading all types
+[2024-09-03T22:29:42.355] debug2: No mpi.conf file (/etc/slurm/mpi.conf)
+[2024-09-03T22:29:42.355] accounting_storage/none: init: Accounting storage NOT INVOKED plugin loaded
+[2024-09-03T22:29:42.356] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/assoc_usage`, No such file or directory
+[2024-09-03T22:29:42.356] debug2: No Assoc usage file (/vagrant/tmp/slurm_shared/tmp/assoc_usage) to recover
+[2024-09-03T22:29:42.357] debug:  switch Cray/Aries plugin loaded.
+[2024-09-03T22:29:42.357] debug:  switch/none: init: switch NONE plugin loaded
+[2024-09-03T22:29:42.358] debug:  Reading slurm.conf file: /etc/slurm/slurm.conf
+[2024-09-03T22:29:42.358] debug:  NodeNames=node01 setting Sockets=1 based on CPUs(4)/(CoresPerSocket(4)/ThreadsPerCore(1))
+[2024-09-03T22:29:42.359] debug:  NodeNames=node02 setting Sockets=1 based on CPUs(4)/(CoresPerSocket(4)/ThreadsPerCore(1))
+[2024-09-03T22:29:42.359] debug:  Reading cgroup.conf file /etc/slurm/cgroup.conf
+[2024-09-03T22:29:42.360] No memory enforcing mechanism configured.
+[2024-09-03T22:29:42.360] topology/none: init: topology NONE plugin loaded
+[2024-09-03T22:29:42.360] debug:  No DownNodes
+[2024-09-03T22:29:42.361] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/last_config_lite`, No such file or directory
+[2024-09-03T22:29:42.361] debug2: No last_config_lite file (/vagrant/tmp/slurm_shared/tmp/last_config_lite) to recover
+[2024-09-03T22:29:42.364] debug:  slurmctld log levels: stderr=debug2 logfile=debug2 syslog=quiet
+[2024-09-03T22:29:42.364] debug:  Log file re-opened
+[2024-09-03T22:29:42.365] sched: Backfill scheduler plugin loaded
+[2024-09-03T22:29:42.365] route/default: init: route default plugin loaded
+[2024-09-03T22:29:42.366] error: ################################################
+[2024-09-03T22:29:42.366] error: ###       SEVERE SECURITY VULERABILTY        ###
+[2024-09-03T22:29:42.366] error: ### StateSaveLocation DIRECTORY IS WORLD WRITABLE ###
+[2024-09-03T22:29:42.366] error: ###         CORRECT FILE PERMISSIONS         ###
+[2024-09-03T22:29:42.367] error: ################################################
+[2024-09-03T22:29:42.367] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/node_state`, No such file or directory
+[2024-09-03T22:29:42.368] error: Could not open node state file /vagrant/tmp/slurm_shared/tmp/node_state: No such file or directory
+[2024-09-03T22:29:42.368] error: NOTE: Trying backup state save file. Information may be lost!
+[2024-09-03T22:29:42.368] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/node_state.old`, No such file or directory
+[2024-09-03T22:29:42.368] No node state file (/vagrant/tmp/slurm_shared/tmp/node_state.old) to recover
+[2024-09-03T22:29:42.369] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/job_state`, No such file or directory
+[2024-09-03T22:29:42.369] error: Could not open job state file /vagrant/tmp/slurm_shared/tmp/job_state: No such file or directory
+[2024-09-03T22:29:42.369] error: NOTE: Trying backup state save file. Jobs may be lost!
+[2024-09-03T22:29:42.369] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/job_state.old`, No such file or directory
+[2024-09-03T22:29:42.369] No job state file (/vagrant/tmp/slurm_shared/tmp/job_state.old) to recover
+[2024-09-03T22:29:42.371] debug:  Updating partition uid access list
+[2024-09-03T22:29:42.371] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/resv_state`, No such file or directory
+[2024-09-03T22:29:42.371] error: Could not open reservation state file /vagrant/tmp/slurm_shared/tmp/resv_state: No such file or directory
+[2024-09-03T22:29:42.371] error: NOTE: Trying backup state save file. Reservations may be lost
+[2024-09-03T22:29:42.372] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/resv_state.old`, No such file or directory
+[2024-09-03T22:29:42.372] No reservation state file (/vagrant/tmp/slurm_shared/tmp/resv_state.old) to recover
+[2024-09-03T22:29:42.372] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/trigger_state`, No such file or directory
+[2024-09-03T22:29:42.372] error: Could not open trigger state file /vagrant/tmp/slurm_shared/tmp/trigger_state: No such file or directory
+[2024-09-03T22:29:42.372] error: NOTE: Trying backup state save file. Triggers may be lost!
+[2024-09-03T22:29:42.372] debug:  create_mmap_buf: Failed to open file `/vagrant/tmp/slurm_shared/tmp/trigger_state.old`, No such file or directory
+[2024-09-03T22:29:42.372] No trigger state file (/vagrant/tmp/slurm_shared/tmp/trigger_state.old) to recover
+[2024-09-03T22:29:42.373] read_slurm_conf: backup_controller not specified
+[2024-09-03T22:29:42.373] Reinitializing job accounting state
+[2024-09-03T22:29:42.373] debug:  power_save module disabled, SuspendTime < 0
+[2024-09-03T22:29:42.373] Running as primary controller
+[2024-09-03T22:29:42.373] debug:  No backup controllers, not launching heartbeat.
+[2024-09-03T22:29:42.373] debug:  priority/basic: init: Priority BASIC plugin loaded
+[2024-09-03T22:29:42.374] No parameter for mcs plugin, default values set
+[2024-09-03T22:29:42.374] mcs: MCSParameters = (null). ondemand set.
+[2024-09-03T22:29:42.374] debug:  mcs/none: init: mcs none plugin loaded
+[2024-09-03T22:29:42.374] debug2: slurmctld listening on 0.0.0.0:6817
+[2024-09-03T22:29:43.157] debug:  hash/k12: init: init: KangarooTwelve hash plugin loaded
+[2024-09-03T22:29:43.158] debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from UID=0
+[2024-09-03T22:29:43.158] debug:  validate_node_specs: node node02 registered with 0 jobs
+[2024-09-03T22:29:43.158] debug2: _slurm_rpc_node_registration complete for node02 usec=254
+[2024-09-03T22:29:43.755] debug2: Processing RPC: REQUEST_PARTITION_INFO from UID=1000
+[2024-09-03T22:29:43.756] debug2: _slurm_rpc_dump_partitions, size=204 usec=21
+[2024-09-03T22:29:43.758] debug2: Processing RPC: REQUEST_NODE_INFO from UID=1000
+[2024-09-03T22:29:45.396] SchedulerParameters=default_queue_depth=100,max_rpc_cnt=0,max_sched_time=2,partition_job_depth=0,sched_max_job_start=0,sched_min_interval=2
+[2024-09-03T22:29:45.397] debug:  sched: Running job scheduler for default depth.
+[2024-09-03T22:29:46.405] debug:  Spawning registration agent for node01 1 hosts
+[2024-09-03T22:29:46.407] debug2: Spawning RPC agent for msg_type REQUEST_NODE_REGISTRATION_STATUS
+[2024-09-03T22:29:46.408] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:29:46.416] debug2: Tree head got back 1
+[2024-09-03T22:29:46.417] debug2: Tree head got back 1
+[2024-09-03T22:29:46.419] debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from UID=0
+[2024-09-03T22:29:46.421] debug:  validate_node_specs: node node01 registered with 0 jobs
+[2024-09-03T22:29:46.422] debug2: _slurm_rpc_node_registration complete for node01 usec=1215
+[2024-09-03T22:29:46.426] debug2: node_did_resp node01
+[2024-09-03T22:29:48.426] debug:  sched: Running job scheduler for default depth.
+[2024-09-03T22:29:52.457] debug:  Spawning ping agent for node02
+[2024-09-03T22:29:52.458] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:29:52.459] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:29:52.472] debug2: Tree head got back 1
+[2024-09-03T22:29:52.473] debug2: Tree head got back 1
+[2024-09-03T22:29:52.476] debug2: node_did_resp node02
+[2024-09-03T22:29:58.509] debug:  Spawning ping agent for node01
+[2024-09-03T22:29:58.510] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:29:58.511] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:29:58.520] debug2: Tree head got back 1
+[2024-09-03T22:29:58.520] debug2: Tree head got back 1
+[2024-09-03T22:29:58.529] debug2: node_did_resp node01
+[2024-09-03T22:30:04.559] debug:  Spawning ping agent for node02
+[2024-09-03T22:30:04.560] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:04.560] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:04.568] debug2: Tree head got back 1
+[2024-09-03T22:30:04.568] debug2: Tree head got back 1
+[2024-09-03T22:30:04.577] debug2: node_did_resp node02
+[2024-09-03T22:30:10.605] debug:  Spawning ping agent for node01
+[2024-09-03T22:30:10.606] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:10.606] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:10.612] debug2: Tree head got back 1
+[2024-09-03T22:30:10.613] debug2: Tree head got back 1
+[2024-09-03T22:30:10.623] debug2: node_did_resp node01
+[2024-09-03T22:30:12.375] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:30:12.376] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:30:12.617] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:30:16.652] debug:  Spawning ping agent for node02
+[2024-09-03T22:30:16.655] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:16.657] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:16.667] debug2: Tree head got back 1
+[2024-09-03T22:30:16.667] debug2: Tree head got back 1
+[2024-09-03T22:30:16.673] debug2: node_did_resp node02
+[2024-09-03T22:30:22.708] debug:  Spawning ping agent for node01
+[2024-09-03T22:30:22.710] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:22.713] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:22.729] debug2: Tree head got back 1
+[2024-09-03T22:30:22.729] debug2: Tree head got back 1
+[2024-09-03T22:30:22.732] debug2: node_did_resp node01
+[2024-09-03T22:30:28.756] debug:  Spawning ping agent for node02
+[2024-09-03T22:30:28.757] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:28.757] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:28.761] debug2: Tree head got back 1
+[2024-09-03T22:30:28.761] debug2: Tree head got back 1
+[2024-09-03T22:30:28.763] debug2: node_did_resp node02
+[2024-09-03T22:30:34.805] debug:  Spawning ping agent for node01
+[2024-09-03T22:30:34.806] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:34.807] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:34.818] debug2: Tree head got back 1
+[2024-09-03T22:30:34.818] debug2: Tree head got back 1
+[2024-09-03T22:30:34.823] debug2: node_did_resp node01
+[2024-09-03T22:30:40.861] debug:  Spawning ping agent for node02
+[2024-09-03T22:30:40.862] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:40.863] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:40.872] debug2: Tree head got back 1
+[2024-09-03T22:30:40.872] debug2: Tree head got back 1
+[2024-09-03T22:30:40.879] debug2: node_did_resp node02
+[2024-09-03T22:30:42.378] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:30:42.379] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:30:42.880] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:30:42.881] debug2: Performing purge of old job records
+[2024-09-03T22:30:42.882] debug:  sched: Running job scheduler for full queue.
+[2024-09-03T22:30:46.915] debug:  Spawning ping agent for node01
+[2024-09-03T22:30:46.916] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:46.916] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:46.928] debug2: Tree head got back 1
+[2024-09-03T22:30:46.930] debug2: Tree head got back 1
+[2024-09-03T22:30:46.934] debug2: node_did_resp node01
+[2024-09-03T22:30:52.957] debug:  Spawning ping agent for node02
+[2024-09-03T22:30:52.959] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:52.960] debug2: Tree head got back 0 looking for 1
+[2024-09-03T22:30:52.967] debug2: Tree head got back 1
+[2024-09-03T22:30:52.967] debug2: Tree head got back 1
+[2024-09-03T22:30:52.976] debug2: node_did_resp node02
+[2024-09-03T22:30:59.001] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:30:59.002] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:30:59.002] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:30:59.006] debug2: Tree head got back 1
+[2024-09-03T22:30:59.007] debug2: Tree head got back 1
+[2024-09-03T22:30:59.007] debug2: Tree head got back 2
+[2024-09-03T22:30:59.007] debug2: Tree head got back 2
+[2024-09-03T22:30:59.008] debug2: node_did_resp node02
+[2024-09-03T22:30:59.009] debug2: node_did_resp node01
+[2024-09-03T22:31:11.100] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:31:11.101] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:31:11.104] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:31:11.123] debug2: Tree head got back 1
+[2024-09-03T22:31:11.124] debug2: Tree head got back 1
+[2024-09-03T22:31:11.125] debug2: Tree head got back 2
+[2024-09-03T22:31:11.125] debug2: Tree head got back 2
+[2024-09-03T22:31:11.142] debug2: node_did_resp node01
+[2024-09-03T22:31:11.143] debug2: node_did_resp node02
+[2024-09-03T22:31:12.112] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:31:12.381] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:31:12.383] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:31:23.211] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:31:23.212] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:31:23.213] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:31:23.220] debug2: Tree head got back 1
+[2024-09-03T22:31:23.220] debug2: Tree head got back 1
+[2024-09-03T22:31:23.221] debug2: Tree head got back 2
+[2024-09-03T22:31:23.221] debug2: Tree head got back 2
+[2024-09-03T22:31:23.229] debug2: node_did_resp node01
+[2024-09-03T22:31:23.229] debug2: node_did_resp node02
+[2024-09-03T22:31:32.375] debug2: Processing RPC: REQUEST_PARTITION_INFO from UID=1000
+[2024-09-03T22:31:32.376] debug2: _slurm_rpc_dump_partitions, size=204 usec=14
+[2024-09-03T22:31:32.377] debug2: Processing RPC: REQUEST_NODE_INFO from UID=1000
+[2024-09-03T22:31:35.309] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:31:35.311] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:31:35.311] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:31:35.322] debug2: Tree head got back 1
+[2024-09-03T22:31:35.323] debug2: Tree head got back 1
+[2024-09-03T22:31:35.324] debug2: Tree head got back 2
+[2024-09-03T22:31:35.324] debug2: Tree head got back 2
+[2024-09-03T22:31:35.327] debug2: node_did_resp node02
+[2024-09-03T22:31:35.327] debug2: node_did_resp node01
+[2024-09-03T22:31:41.360] debug:  Spawning registration agent for node[01-02] 2 hosts
+[2024-09-03T22:31:41.360] debug2: Spawning RPC agent for msg_type REQUEST_NODE_REGISTRATION_STATUS
+[2024-09-03T22:31:41.361] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:31:41.367] debug2: Tree head got back 1
+[2024-09-03T22:31:41.370] debug2: Tree head got back 2
+[2024-09-03T22:31:41.371] debug2: Tree head got back 2
+[2024-09-03T22:31:41.372] debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from UID=0
+[2024-09-03T22:31:41.372] debug2: _slurm_rpc_node_registration complete for node01 usec=8
+[2024-09-03T22:31:41.373] debug2: Processing RPC: MESSAGE_NODE_REGISTRATION_STATUS from UID=0
+[2024-09-03T22:31:41.373] debug2: _slurm_rpc_node_registration complete for node02 usec=4
+[2024-09-03T22:31:41.377] debug2: node_did_resp node01
+[2024-09-03T22:31:41.379] debug2: node_did_resp node02
+[2024-09-03T22:31:42.370] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:31:42.374] debug2: Performing purge of old job records
+[2024-09-03T22:31:42.375] debug:  sched: Running job scheduler for full queue.
+[2024-09-03T22:31:42.384] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:31:42.385] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:31:53.467] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:31:53.469] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:31:53.470] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:31:53.482] debug2: Tree head got back 1
+[2024-09-03T22:31:53.483] debug2: Tree head got back 2
+[2024-09-03T22:31:53.489] debug2: node_did_resp node02
+[2024-09-03T22:31:53.490] debug2: node_did_resp node01
+[2024-09-03T22:32:05.569] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:32:05.571] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:32:05.572] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:32:05.592] debug2: Tree head got back 1
+[2024-09-03T22:32:05.593] debug2: Tree head got back 1
+[2024-09-03T22:32:05.595] debug2: Tree head got back 2
+[2024-09-03T22:32:05.596] debug2: Tree head got back 2
+[2024-09-03T22:32:05.611] debug2: node_did_resp node01
+[2024-09-03T22:32:05.612] debug2: node_did_resp node02
+[2024-09-03T22:32:12.386] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:32:12.387] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:32:12.626] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:32:17.669] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:32:17.671] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:32:17.672] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:32:17.684] debug2: Tree head got back 1
+[2024-09-03T22:32:17.686] debug2: Tree head got back 1
+[2024-09-03T22:32:17.687] debug2: Tree head got back 2
+[2024-09-03T22:32:17.689] debug2: Tree head got back 2
+[2024-09-03T22:32:17.709] debug2: node_did_resp node02
+[2024-09-03T22:32:17.709] debug2: node_did_resp node01
+[2024-09-03T22:32:29.771] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:32:29.772] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:32:29.773] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:32:29.781] debug2: Tree head got back 1
+[2024-09-03T22:32:29.781] debug2: Tree head got back 1
+[2024-09-03T22:32:29.782] debug2: Tree head got back 2
+[2024-09-03T22:32:29.782] debug2: Tree head got back 2
+[2024-09-03T22:32:29.790] debug2: node_did_resp node01
+[2024-09-03T22:32:29.790] debug2: node_did_resp node02
+[2024-09-03T22:32:41.862] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:32:41.863] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:32:41.863] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:32:41.872] debug2: Tree head got back 1
+[2024-09-03T22:32:41.873] debug2: Tree head got back 1
+[2024-09-03T22:32:41.874] debug2: Tree head got back 2
+[2024-09-03T22:32:41.874] debug2: Tree head got back 2
+[2024-09-03T22:32:41.880] debug2: node_did_resp node02
+[2024-09-03T22:32:41.880] debug2: node_did_resp node01
+[2024-09-03T22:32:42.389] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:32:42.390] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:32:42.873] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:32:42.874] debug2: Performing purge of old job records
+[2024-09-03T22:32:42.874] debug:  sched: Running job scheduler for full queue.
+[2024-09-03T22:32:53.959] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:32:53.961] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:32:53.963] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:32:53.980] debug2: Tree head got back 1
+[2024-09-03T22:32:53.982] debug2: Tree head got back 2
+[2024-09-03T22:32:53.982] debug2: Tree head got back 2
+[2024-09-03T22:32:54.001] debug2: node_did_resp node02
+[2024-09-03T22:32:54.002] debug2: node_did_resp node01
+[2024-09-03T22:33:06.056] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:33:06.061] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:33:06.063] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:33:06.076] debug2: Tree head got back 1
+[2024-09-03T22:33:06.077] debug2: Tree head got back 1
+[2024-09-03T22:33:06.079] debug2: Tree head got back 2
+[2024-09-03T22:33:06.079] debug2: Tree head got back 2
+[2024-09-03T22:33:06.100] debug2: node_did_resp node02
+[2024-09-03T22:33:06.100] debug2: node_did_resp node01
+[2024-09-03T22:33:12.109] debug2: Testing job time limits and checkpoints
+[2024-09-03T22:33:12.391] debug:  sched/backfill: _attempt_backfill: beginning
+[2024-09-03T22:33:12.393] debug:  sched/backfill: _attempt_backfill: no jobs to backfill
+[2024-09-03T22:33:18.159] debug:  Spawning ping agent for node[01-02]
+[2024-09-03T22:33:18.161] debug2: Spawning RPC agent for msg_type REQUEST_PING
+[2024-09-03T22:33:18.161] debug2: Tree head got back 0 looking for 2
+[2024-09-03T22:33:18.169] debug2: Tree head got back 1
+[2024-09-03T22:33:18.169] debug2: Tree head got back 1
+[2024-09-03T22:33:18.173] debug2: Tree head got back 2
+[2024-09-03T22:33:18.173] debug2: Tree head got back 2
+[2024-09-03T22:33:18.177] debug2: node_did_resp node02
+[2024-09-03T22:33:18.178] debug2: node_did_resp node01
